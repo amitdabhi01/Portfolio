@@ -1,27 +1,89 @@
+
+
 h1,h2,h3,h4,h5,h6{
     font-family: "Rubik", serif;
     font-weight: 400;
 }
 
-
-
-.nav-bg{
-    background-color: #f6f6f6;
+p{
+    font-family: "Quicksand", serif;
+    font-weight: 500;
+    line-height: 1.8;
 }
+
+.margin-b{
+    margin-bottom: 100px;
+}
+
+
+/* ---------------------------------------- section-1 start ---------------------------------------- */
+.body-img{
+    background-image: url(img/body-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .navbar-a a{
     font-family: "Quicksand", serif;
     font-size: 16px;
     font-weight: 600;
 }
-.navbar-a a:hover{
-    text-decoration: underline;
-    color: black;
+
+.banner-content h3{
+    font-size: 40px;
+    margin-bottom: 20px;
+    position: relative;
 }
-.navbar-brand{
-    background-color: rgba(255, 255, 255, .7);
-    border: 1px solid #d3d3d3;
+
+.banner-content h3::after{
+    content: "";
+    width: 410px;
+    height: 2px;
+    position: absolute;
+    background: #000000;
+    top: 50%;
+    left: 20%;
 }
-.navbar-nav{
-    background-color: rgba(255, 255, 255, .7);
-    border: 1px solid #d3d3d3;
+
+.banner-content h1{
+    font-size: 70px;
+    line-height: 60px;
+    margin-top: 20px;
+    margin-bottom: 25px;
 }
+
+.banner-content h5{
+    font-size: 24px;
+    margin-bottom: 35px;
+}
+
+.button-1{
+    background-image: linear-gradient(to right, #4458dc 0%, #854fee 100%), radial-gradient(circle at top left, #4458dc, #854fee) !important;
+    border: 2px solid transparent !important;
+    box-shadow: 0px 10px 30px rgba(118, 85, 225, 0.3) !important;
+    color: white !important;
+    font-family: "Quicksand", serif !important;
+    line-height: 35px !important;
+    width: 150px !important;
+}
+.button-1:hover{
+    border: 2px solid #854fee !important;
+    color: #222222 !important;
+    box-shadow: none !important;
+    background-image: linear-gradient(#ffffff, #ffffff), radial-gradient(circle at top left, #4458dc, #854fee) !important;
+    font-weight: 500 !important;
+}
+/* ---------------------------------------- section-1 end ---------------------------------------- */
+
+
+
+
+
+/* ---------------------------------------- my-self start ---------------------------------------- */
+.my-self h1{
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    line-height: 50px;
+}
+/* ---------------------------------------- my-self end ---------------------------------------- */
