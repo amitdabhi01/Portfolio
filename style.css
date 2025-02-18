@@ -87,3 +87,18 @@ p{
     line-height: 50px;
 }
 /* ---------------------------------------- my-self end ---------------------------------------- */
+
+
+
+
+/* ---------------------------------------- my-services start ---------------------------------------- */
+.service-item{
+    padding: 45px 25px;
+    background: #f9f9fd;
+    transition: all 0.5s;
+}
+.service-item:hover{
+    background: #fff;
+    box-shadow: 0px 15px 30px rgba(77, 87, 222, 0.3);
+}
+/* ---------------------------------------- my-services end ---------------------------------------- */
