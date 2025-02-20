@@ -29,6 +29,11 @@ p{
     font-weight: 600;
 }
 
+.navbar-a a:hover{
+    text-decoration: underline;
+    color: black;
+}
+
 .banner-content h3{
     font-size: 40px;
     margin-bottom: 20px;
@@ -92,6 +97,22 @@ p{
 
 
 
+/* ---------------------------------------- my-services start ---------------------------------------- */
+.service-item{
+    padding: 45px 25px;
+    background: #f9f9fd;
+    transition: all 0.5s;
+}
+.service-item:hover{
+    background: #fff;
+    box-shadow: 0px 15px 30px rgba(77, 87, 222, 0.3);
+}
+/* ---------------------------------------- my-services end ---------------------------------------- */
+
+
+
+
+
 /* ---------------------------------------- my-skills start ---------------------------------------- */
 .my-skills{
     padding: 25px 15px;
@@ -108,15 +129,29 @@ p{
 
 
 
+/* ---------------------------------------- projects start ---------------------------------------- */
 
-/* ---------------------------------------- my-services start ---------------------------------------- */
-.service-item{
-    padding: 45px 25px;
-    background: #f9f9fd;
-    transition: all 0.5s;
+/* ---------------------------------------- projects end ---------------------------------------- */
+
+
+
+
+
+/* ---------------------------------------- contact start ---------------------------------------- */
+.contact-bg{
+    background-image: url(img/contact-bg.png);
+    padding: 100px 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
 }
-.service-item:hover{
-    background: #fff;
-    box-shadow: 0px 15px 30px rgba(77, 87, 222, 0.3);
+.send{
+    background-color: white !important;
+    color: black;
+    width: 20% !important;
+    font-size: 17px !important;
+    font-family: "Quicksand", serif !important;
+    height: 50px !important;
+    border: 2px solid black !important;
 }
-/* ---------------------------------------- my-services end ---------------------------------------- */
+/* ---------------------------------------- contact end ---------------------------------------- */
