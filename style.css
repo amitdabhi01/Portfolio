@@ -130,7 +130,29 @@ p{
 
 
 /* ---------------------------------------- projects start ---------------------------------------- */
-
+.project-img{
+    position: relative;
+}
+.project-img img{
+    border-radius: 30px;
+}
+.visit{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: white;
+    padding: 20px;
+    border-top-left-radius: 20px;
+}
+.visit a{
+    text-decoration: none;
+    font-family: "Quicksand", serif;
+    color: black;
+    font-weight: 500;
+    border-radius: 40px;
+    border: 1px solid black;
+    background-color: #f9f9fd;
+}
 /* ---------------------------------------- projects end ---------------------------------------- */
 
 
@@ -140,7 +162,7 @@ p{
 /* ---------------------------------------- contact start ---------------------------------------- */
 .contact-bg{
     background-image: url(img/contact-bg.png);
-    padding: 100px 150px;
+    padding: 60px 150px;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -153,5 +175,8 @@ p{
     font-family: "Quicksand", serif !important;
     height: 50px !important;
     border: 2px solid black !important;
+}
+.send:hover{
+    box-shadow: rgba(39, 39, 39, 0.25) 0px 14px 28px, rgba(31, 31, 31, 0.22) 0px 10px 10px;
 }
 /* ---------------------------------------- contact end ---------------------------------------- */
