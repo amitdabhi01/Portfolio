@@ -29,6 +29,14 @@ p{
     font-weight: 600;
 }
 
+.header{
+    padding-top: 170px;
+}
+
+.nav-bg{
+    background-color: white;
+}
+
 .navbar-a a:hover{
     text-decoration: underline;
     color: black;
@@ -42,7 +50,7 @@ p{
 
 .banner-content h3::after{
     content: "";
-    width: 410px;
+    width: 200px;
     height: 2px;
     position: absolute;
     background: #000000;
@@ -142,7 +150,9 @@ p{
     right: 0;
     background-color: white;
     padding: 20px;
-    border-top-left-radius: 20px;
+    /* border-top-left-radius: 20px; */
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 .visit a{
     text-decoration: none;
@@ -150,8 +160,8 @@ p{
     color: black;
     font-weight: 500;
     border-radius: 40px;
-    border: 1px solid black;
-    background-color: #f9f9fd;
+    /* border: 1px solid black; */
+    background-color: #ececf7;
 }
 /* ---------------------------------------- projects end ---------------------------------------- */
 
