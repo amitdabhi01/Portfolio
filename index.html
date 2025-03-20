@@ -6,7 +6,7 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="bootstrap.min.css">
-    <link rel="stylesheet" href="bootstrap.bundle.min.js">
+    <script src="bootstrap.bundle.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
@@ -14,23 +14,29 @@
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body class="body-img">
 
-  <nav class="navbar navbar-expand-lg p-0 margin-b">
+  <nav class="navbar navbar-expand-lg p-0 position-fixed w-100 bg-white z-3 shadow">
     <div class="container">
-      <a href="" class="navbar-brand p-0 text-decoration-none px-4 pt-1 my-3 border">
+      <a href="" class="navbar-brand p-0 text-decoration-none px-4 pt-1 my-2">
         <h1>Amit</h1>
       </a>
-      <div class="collapse navbar-collapse" id="navbar-Collapse">
-        <div class="navbar-nav ms-auto navbar-a border">
-          <a href="" class="nav-link ms-3 me-3 active">Home</a>
-          <a href="" class="nav-link me-3">About</a>
-          <a href="" class="nav-link me-3">Services</a>
-          <a href="" class="nav-link me-3">Skills</a>
-          <a href="" class="nav-link me-3">Projects</a>
-          <a href="" class="nav-link me-3">Contact</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-Collapse" aria-controls="navbar-Collapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-center" id="navbar-Collapse">
+        <div class="navbar-nav ms-auto navbar-a">
+          <a href="" class="nav-link me-3 active">Home</a>
+          <a href="#about" class="nav-link me-3">About</a>
+          <a href="#services" class="nav-link me-3">Services</a>
+          <a href="#skills" class="nav-link me-3">Skills</a>
+          <a href="#projects" class="nav-link me-3">Projects</a>
+          <a href="#contact" class="nav-link me-3">Contact</a>
+          <a href="https://github.com/amitdabhi01" class="nav-link me-3" target="_blank"><i class="fa-brands fa-github fs-5"></i></a>
         </div>
       </div>
     </div>
@@ -38,7 +44,7 @@
 
 
   <section>
-    <div class="container margin-b">
+    <div class="container margin-b p-top">
       <div class="row justify-content-center align-items-center">
         <div class="col-7">
           <div class="banner-content">
@@ -49,7 +55,7 @@
           </div>
         </div>
         <div class="col-5">
-          <div class="porfolio-img">
+          <div class="porfolio-img d-none d-sm-none d-md-none d-lg-block d-lg-block">
             <img src="img/portfolio.png" alt="" class="img-fluid">
           </div>
         </div>
@@ -57,10 +63,10 @@
     </div>
   </section>
 
-  <section>
+  <section id="about">
     <div class="container margin-b">
       <div class="row justify-content-center align-items-center">
-        <div class="col-12 col-sm-6 col-md-6 col-xl=6 col-xxl-6">
+        <div class="col-12 col-sm-6 col-md-6 col-xl=6 col-xxl-6 mb-5">
           <img src="img/about-us.png" alt="" class="img-fluid">
         </div>
         <div class="col-12 col-sm-6 col-md-6 col-xl=6offset-lg-1">
@@ -83,7 +89,7 @@
   </section>
 
 
-  <section>
+  <section id="services">
     <div class="container margin-b">
       <div class="title text-center">
         <h2 class="mb-3">
@@ -121,7 +127,7 @@
   </section>
   
 
-  <section>
+  <section id="skills">
     <div class="container margin-b">
       <div class="title mb-5">
         <h2 class="text-center">
@@ -160,58 +166,98 @@
 
 
   
-  <section>
-    <div class="container margin-b">
+  <section id="projects">
+    <div class="container margin-b position-static">
       <div class="title mb-5">
         <h2 class="text-center">
           RECENTLY DONE PROJECTS
         </h2>
         <p class="border w-50 mx-auto p-0"></p>
       </div>
-      <div class="row justify-content-center align-items-center g-4">
-        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
-          <div class="project-img">
-            <img src="img/mailler.png" alt="" class="img-fluid">
-            <div class="visit">
-              <a href="" class="px-3 py-2">Website</a>
-              <a href="" class="px-3 py-2">E-Commerce</a>
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row justify-content-center align-items-center g-4">
+              <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                <div class="project-img">
+                  <img src="img/mailler.png" alt="" class="img-fluid">
+                  <div class="visit">
+                    <a href="https://mailler-ten.vercel.app/" class="px-3 py-2" target="_blank">Website</a>
+                    <a href="#" class="px-3 py-2">E-Commerce</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                <div class="project-img">
+                  <img src="img/pestkit.png" alt="" class="img-fluid">
+                  <div class="visit">
+                    <a href="https://pestkit-vert.vercel.app/" class="px-3 py-2" target="_blank">Website</a>
+                    <a href="#" class="px-3 py-2">E-Commerce</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row justify-content-center align-items-center g-4">
+              <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                <div class="project-img">
+                  <img src="img/adminator.png" alt="" class="img-fluid">
+                  <div class="visit">
+                    <a href="https://adminator-azure.vercel.app/" class="px-3 py-2" target="_blank">Website</a>
+                    <a href="#" class="px-3 py-2">E-Commerce</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                <div class="project-img">
+                  <img src="img/black_slate.png" alt="" class="img-fluid">
+                  <div class="visit">
+                    <a href="https://black-slate-six.vercel.app/" class="px-3 py-2" target="_blank">Website</a>
+                    <a href="#" class="px-3 py-2">E-Commerce</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row justify-content-center align-items-center g-4">
+              <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                <div class="project-img">
+                  <img src="img/imdb.png" alt="" class="img-fluid">
+                  <div class="visit">
+                    <a href="https://black-slate-six.vercel.app/" class="px-3 py-2" target="_blank">Website</a>
+                    <a href="#" class="px-3 py-2">E-Commerce</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                <div class="project-img">
+                  <img src="img/portfolio-p.png" alt="" class="img-fluid">
+                  <div class="visit">
+                    <a href="https://portfolio-gamma-khaki-81.vercel.app/" class="px-3 py-2" target="_blank">Website</a>
+                    <a href="#" class="px-3 py-2">E-Commerce</a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
-          <div class="project-img">
-            <img src="img/pestkit.png" alt="" class="img-fluid">
-            <div class="visit">
-              <a href="" class="px-3 py-2">Website</a>
-              <a href="" class="px-3 py-2">E-Commerce</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
-          <div class="project-img">
-            <img src="img/adminator.png" alt="" class="img-fluid">
-            <div class="visit">
-              <a href="" class="px-3 py-2">Website</a>
-              <a href="" class="px-3 py-2">E-Commerce</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
-          <div class="project-img">
-            <img src="img/black_slate.png" alt="" class="img-fluid">
-            <div class="visit">
-              <a href="" class="px-3 py-2">Website</a>
-              <a href="" class="px-3 py-2">E-Commerce</a>
-            </div>
-          </div>
-        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </div>
   </section>
 
   
-  <section>
-    <div class="container">
+  <section id="contact">
+    <div class="container mb-5">
       <div class="title">
         <h2 class="text-center">
           CONTACT ME
@@ -232,7 +278,7 @@
               </div>
               <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 mb-5">
                 <label for="exampleFormControlInput1" class="form-label text-white">Email address</label>
-                <input type="email" class="form-control border-2" id="exampleFormControlInput1" placeholder="name@example.com">
+                <input type="email" class="form-control border-2" id="exampleFormControlInput1" placeholder="name@gmail.com">
               </div>
               <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 mb-5">
                 <label for="exampleFormControlInput1" class="form-label text-white">Number</label>
